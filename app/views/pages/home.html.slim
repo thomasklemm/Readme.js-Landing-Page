@@ -1,0 +1,78 @@
+/ home.html.slim
+
+/ Name
+h1 style='display: inline-block' Readme.js
+
+/ Watch Button
+iframe src="http://markdotto.github.com/github-buttons/github-btn.html?user=thomasklemm&repo=Readme.js&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170px" height="30px" style='margin-left: 2.6rem'
+
+/ Latest Version on Github
+span.right style='margin-top: 2rem'
+  = link_to 'https://github.com/thomasklemm/Readme.js', class: 'radius button', style: 'padding: 0; padding-right: 2.4rem' do
+    span.left = image_tag('Octocat.png', style: 'width: 100px; height: 100px; margin: 1rem;')
+    span style='position: relative; top: 2.8rem'
+      span style='font-size: 3rem; line-height: 1.2' Latest Version <br />
+      span style='font-size: 2rem' on Github
+
+/ Slogan
+h3.subheader Readme.js embeds <br /> a Github Repo's Readme <br /> into any website.
+'
+
+p 
+  ' All the Readmes below are embedded using 
+  = link_to 'Readme.js', 'https://github.com/thomasklemm/Readme.js'
+  ' . Give it a try!
+
+/ Tabs
+/ Tabs Links
+dl class='tabs contained'
+  dd.active = link_to 'Readme.js', '#readmejs'
+  dd        = link_to 'Sinatra', '#sinatra'
+  dd        = link_to 'Any Readme', '#demo'
+  dd        = link_to 'Download', '#download'
+
+/ Tabs Content
+ul class='tabs-content contained'
+  
+  / Readme.js
+  li#readmejsTab.active
+    h5 Readme for Readme.js
+    code A div with class='readme_js' data-owner='thomasklemm' data-name='Readme.js'
+    .readme_js data-owner='thomasklemm' data-name='Readme.js'
+
+  / Sinatra
+  li#sinatraTab
+    h5 Readme for Sinatra
+    code A div with id='readme_sinatra' that is being initialized with javascript $('#readme_sinatra').readme({'owner': 'sinatra', 'repo': 'sinatra'});
+
+    #readme_sinatra
+
+
+  / Demo
+  li#demoTab
+    h5 Name any Repo
+    h5.subheader and we'll load it for you
+    '
+
+    form action='#' id='js_load_readme'
+      label Owner
+      input type='text' name='owner' autofocus='autofocus' placeholder='thomasklemm' autocomplete='off'
+      label Repo
+      input type='text' name='repo' placeholder='Readme.js'
+      input type='submit' class='radius button' value='Load Readme' autocomplete='off'
+
+    #readme_custom Your Readme will be loaded here. Go ahead and ask for one!
+
+  / Downlaod
+  li#downloadTab
+    h5 Download Readme.js
+
+    / Latest Version on Github
+    span style='margin-top: 2rem'
+      = link_to 'https://github.com/thomasklemm/Readme.js', class: 'radius button', style: 'padding: 0; padding-right: 2.4rem' do
+        span.left = image_tag('Octocat.png', style: 'width: 100px; height: 100px; margin: 1rem;')
+        span style='position: relative; top: 2.8rem'
+          span style='font-size: 3rem; line-height: 1.2' Latest Version <br />
+          span style='font-size: 2rem' on Github
+
+
