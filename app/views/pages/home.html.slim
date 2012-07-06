@@ -19,16 +19,16 @@ h3.subheader Readme.js embeds <br /> a Github Repo's Readme <br /> into any webs
 '
 
 p 
-  ' All the Readmes below are embedded using 
+  ' All Readmes below are embedded using 
   = link_to 'Readme.js', 'https://github.com/thomasklemm/Readme.js'
-  ' . Give it a try!
+  ' . Have a go and give it a try!
 
 / Tabs
 / Tabs Links
 dl class='tabs contained'
   dd.active = link_to 'Readme.js', '#readmejs'
   dd        = link_to 'Sinatra', '#sinatra'
-  dd        = link_to 'Any Readme', '#demo'
+  dd        = link_to 'Test it yourself', '#demo'
   dd        = link_to 'Download', '#download'
 
 / Tabs Content
@@ -37,13 +37,13 @@ ul class='tabs-content contained'
   / Readme.js
   li#readmejsTab.active
     h5 Readme for Readme.js
-    code A div with class='readme_js' data-owner='thomasklemm' data-name='Readme.js'
+    p: code div class='readme_js' data-owner='thomasklemm' data-name='Readme.js'
     .readme_js data-owner='thomasklemm' data-name='Readme.js'
 
   / Sinatra
   li#sinatraTab
     h5 Readme for Sinatra
-    code A div with id='readme_sinatra' that is being initialized with javascript $('#readme_sinatra').readme({'owner': 'sinatra', 'repo': 'sinatra'});
+    p: code div id='readme_sinatra' <br /> $('#readme_sinatra').readme({'owner': 'sinatra', 'repo': 'sinatra'});
 
     #readme_sinatra
 
@@ -51,7 +51,7 @@ ul class='tabs-content contained'
   / Demo
   li#demoTab
     h5 Name any Repo
-    h5.subheader and we'll load it for you
+    h5.subheader and we'll load it's Readme for you
     '
 
     form action='#' id='js_load_readme'
