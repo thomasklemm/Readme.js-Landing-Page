@@ -12,7 +12,7 @@
 //= require foundation/foundation
 
 # Readme
-//= require readme
+//= require readme/readme
 
 # App
 //= require pages
