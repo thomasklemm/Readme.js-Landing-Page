@@ -19,7 +19,7 @@ gem 'pg', group: :production
 group :assets do
   gem 'sass-rails'
   gem 'compass-rails' # some syntax in the foundation stylesheets seems to be only compatible with compass
-  gem 'zurb-foundation', '~> 3.0.0' # specifying nescessary versions for sass and compass
+  gem 'zurb-foundation', '~> 3.0.1' # specifying nescessary versions for sass and compass
   gem 'coffee-rails'
   gem 'uglifier'
   # Bourbon (SASS Mixins)
