@@ -37,13 +37,14 @@ ul class='tabs-content contained'
   / Readme.js
   li#readmejsTab.active
     h5 Readme for Readme.js
-    p: code div class='readme_js' data-owner='thomasklemm' data-name='Readme.js'
+    .panel: code &lt;div class='readme_js' data-owner='thomasklemm' data-repo='Readme.js'&gt;&lt/div&gt;
+
     .readme_js data-owner='thomasklemm' data-name='Readme.js'
 
   / Sinatra
   li#sinatraTab
     h5 Readme for Sinatra
-    p: code div id='readme_sinatra' <br /> $('#readme_sinatra').readme({'owner': 'sinatra', 'repo': 'sinatra'});
+    .panel: code &lt;div id='readme_sinatra'&gt;&lt;/div&gt;<br />&lt;script&gt;<br />&nbsp;&nbsp;$('#readme_sinatra').readme({'owner': 'sinatra', 'repo': 'sinatra'});<br />&lt;/script&gt;
 
     #readme_sinatra
 

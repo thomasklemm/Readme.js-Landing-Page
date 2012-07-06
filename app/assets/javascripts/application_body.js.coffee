@@ -24,5 +24,5 @@ $ ->
   # Sinatra
   $('#readme_sinatra').readme({
       'owner': 'sinatra',
-      'name': 'sinatra'
+      'repo': 'sinatra'
     })
