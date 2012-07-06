@@ -27,7 +27,7 @@ p
 / Tabs Links
 dl class='tabs contained'
   dd.active = link_to 'Readme.js', '#readmejs'
-  dd        = link_to 'Sinatra', '#sinatra'
+  dd        = link_to 'Sinatra', '#sinatrareadme'
   dd        = link_to 'Test it yourself', '#demo'
   dd        = link_to 'Download', '#download'
 
@@ -42,7 +42,7 @@ ul class='tabs-content contained'
     .readme_js data-owner='thomasklemm' data-name='Readme.js'
 
   / Sinatra
-  li#sinatraTab
+  li#sinatrareadmeTab
     h5 Readme for Sinatra
     .panel: code &lt;div id='readme_sinatra'&gt;&lt;/div&gt;<br />&lt;script&gt;<br />&nbsp;&nbsp;$('#readme_sinatra').readme({'owner': 'sinatra', 'repo': 'sinatra'});<br />&lt;/script&gt;
 
