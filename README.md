@@ -1,6 +1,8 @@
 # Readme.js
 Readme.js is a jQuery Plugin that embeds the Readme of a Github Repo into any website.
 
+NOTE: THIS REPO IS HOLDING THE LANDING PAGE OF [README.JS](https://github.com/thomasklemm/Readme.js). [It is online here.](http://readme.knight.io/).
+
 ### How to Use
 You have two options when using Readme.js:
   - Using HTML Data-Attributes
