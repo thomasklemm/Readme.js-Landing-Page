@@ -7,12 +7,10 @@ ruby '1.9.3'
 gem 'unicorn'
 
 # Rails
-gem 'rails', '3.2.5'
+gem 'rails', '3.2.6'
 
 # Database Connectors
-#  TODO: Switch to PG locally too
-gem 'sqlite3', group: [:development, :test]
-gem 'pg', group: :production
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
